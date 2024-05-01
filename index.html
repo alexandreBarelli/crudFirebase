@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área Reservada</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilo.css" />
     <!--
         sm - small - 576px
         md - mediun - 762px
@@ -18,44 +23,65 @@
 
     -->
 </head>
-<body>
+
+<body class="Login">
     <div class="container"> <!-- container-fluid para toda a UI -->
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <!--undrow.co-->
-                <div class="card">
+                <div class="card shadow-lg rounded">
                     <div class="text-center">
-                        <img src="images/login.svg" alt="Efetuar login"
-                        tittle="Login" class="w-25"/>
+                        <img src="images/login.svg" alt="Efetuar login" tittle="Login" class="w-25" />
                     </div>
                     <div class="card-header">
                         <h5 class="card-title text-primary"><i class="bi bi-key-fill"></i> Área Reservada</h5>
                     </div>
                     <div class="card-body">
                         <form action="" id="formLogin">
-                            <div class="form-group">
+                            <div class="form-group" mt-2>
                                 <label for="email">E-mail</label>
-                                <input type="email" class="form-control" 
-                                placeholder="email do usuário" id="email" required autofocus/>
+                                <input type="email" class="form-control" placeholder="email do usuário" id="email"
+                                    required autofocus />
                                 <!-- cada label e input ficam dentro de um form-group -->
                             </div>
-                            <div class="form-group">
+                            <div class="form-group mt-2">
                                 <label for="senha">Senha</label>
-                                <input type="password" class="form-control" 
-                                id="senha" placeholder="senha do usuário" required/>
+                                <input type="password" class="form-control" id="senha" placeholder="senha do usuário"
+                                    required />
                             </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-success" title="Efetue o login com o seu usuário e senha"><i class="bi bi-file-lock"></i> Login</button>
+                            <div class="form-group mt-4">
+                                <button type="submit" class="btn btn-success"
+                                    title="Efetue o login com o seu usuário e senha"><i class="bi bi-file-lock"></i>
+                                    Login</button>
 
-                                <button id="loginGoogle" class="btn btn-primary" type="button" tittle="Efetue o login com o Google"><i class="bi bi-google"> Logar com o Google</i>
+                                <button id="loginGoogle" class="btn btn-primary" type="button"
+                                    tittle="Efetue o login com o Google"><i class="bi bi-google"> Logar com o Google</i>
                                 </button>
+                                <!-- 
+                                    Espaçamento no bootstrap
+                                    m -> margin
+                                    p -> padding
+                                    t -> top
+                                    b -> bottom
+                                    l -> left
+                                    r -> right
+                                    x -> left and right
+                                    y - top and bottom
+                                    0 a 5 -> spacing
+                                    0 - 0%
+                                    1 - 25% ...
+                                 -->
                             </div>
                         </form>
+                        <div class="my-2">
+                            <a href="novo-usuario.html">Ainda não tem uma conta</a>
+                        </div>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
 </body>
+
 </html>
